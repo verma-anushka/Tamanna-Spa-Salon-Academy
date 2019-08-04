@@ -1,32 +1,7 @@
-/* JS Document */
-
-/******************************
-
-1. Vars and Inits
-2. Set Header
-3. Init Menu
-4. Init Home Slider
-5. Init App
-6. Init SVG
-7. Init Scrolling
-8. Init Services Slider
-9. Init Testimonials Slider
-10. Init Gallery
-11. Init Services Slider
-12. Init Popular Posts Slider
-13. Init Parallax
-
-******************************/
 
 $(document).ready(function()
 {
 	"use strict";
-
-	/* 
-
-	1. Vars and Inits
-
-	*/
 
 	var header = $('.header');
 
@@ -59,11 +34,7 @@ $(document).ready(function()
 		setHeader();
 	});
 
-	/* 
-
-	2. Set Header
-
-	*/
+	// Set Header
 
 	function setHeader()
 	{
@@ -77,11 +48,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	3. Init Menu
-
-	*/
+	// Init Menu
 
 	function initMenu()
 	{
@@ -99,11 +66,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	4. Init Home Slider
-
-	*/
+	// Init Home Slider
 
 	function initHomeSlider()
 	{
@@ -191,11 +154,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	5. Init App
-
-	*/
+	//  Init App
 
 	function initApp()
 	{
@@ -234,11 +193,7 @@ $(document).ready(function()
 		content.removeClass('active');
 	}
 
-	/* 
-
-	6. Init SVG
-
-	*/
+	// Init SVG
 
 	function initSvg()
 	{
@@ -275,35 +230,39 @@ $(document).ready(function()
 		}	
 	}
 
-	/* 
-
-	7. Init Scrolling
-
-	*/
+	// Init Scrolling
 
 	function initScrolling()
 	{
-		if($('.scroll_to').length)
-		{
-			var links = $('.scroll_to');
-	    	links.each(function()
-	    	{
-	    		var ele = $(this);
-	    		var target = ele.data('scroll-to');
-	    		ele.on('click', function(e)
-	    		{
-	    			e.preventDefault();
-	    			$(window).scrollTo(target, 1500, {offset: -75, easing: 'easeInOutQuart'});
-	    		});
-	    	});
-		}	
+
+		$(".scroll_down").click(function() {
+		     $('html, body').animate({
+		         scrollTop: $(".testimonials").offset().top
+		     }, 1500);
+		 });
 	}
 
-	/* 
+	function backToTop(){
 
-	8. Init Services Slider
+		// Check distance to top and display back-to-top.
+		$( window ).scroll( function() {
+			if ( $( this ).scrollTop() > 800 ) {
+				$( '.back-to-top' ).addClass( 'show-back-to-top' );
+			} else {
+				$( '.back-to-top' ).removeClass( 'show-back-to-top' );
+			}
+		});
 
-	*/
+		// Click event to scroll to top.
+		$( '.back-to-top' ).click( function() {
+			$( 'html, body' ).animate( { scrollTop : 0 }, 800 );
+			return false;
+		});
+
+
+	}
+		
+	// Init Services Slider
 
 	function initServicesSlider()
 	{
@@ -329,11 +288,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	9. Init Testimonials Slider
-
-	*/
+	// Init Testimonials Slider
 
 	function initTestimonialsSlider()
 	{
@@ -359,11 +314,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	10. Init Gallery
-
-	*/
+	//  Init Gallery
 
 	function initGallery()
 	{
@@ -421,11 +372,7 @@ $(document).ready(function()
 		});
 	}
 
-	/* 
-
-	11. Init Services Slider
-
-	*/
+	// Init Services Slider
 
 	function initArticleSlider()
 	{
@@ -451,11 +398,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	12. Init Popular Posts Slider
-
-	*/
+	// Init Popular Posts Slider
 
 	function initSingleSlider()
 	{
@@ -476,11 +419,7 @@ $(document).ready(function()
 		}
 	}
 	
-	/* 
-
-	13. Init Parallax
-
-	*/
+	// Init Parallax
 
 	function initParallax()
 	{
