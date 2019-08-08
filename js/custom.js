@@ -10,6 +10,7 @@ $(document).ready(function()
 	initApp();
 	initSvg();
 	initScrolling();
+	backToTop();
 	initServicesSlider();
 	initTestimonialsSlider();
 	initGallery();
@@ -237,7 +238,7 @@ $(document).ready(function()
 
 		$(".scroll_down").click(function() {
 		     $('html, body').animate({
-		         scrollTop: $(".testimonials").offset().top
+		         scrollTop: $(".services").offset().top
 		     }, 1500);
 		 });
 	}
