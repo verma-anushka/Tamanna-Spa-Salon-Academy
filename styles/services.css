@@ -124,6 +124,7 @@ h6::selection
 img
 {
 	max-width: 100%;
+	opacity: 0.75;
 }
 .clear
 {
@@ -198,7 +199,7 @@ img
 }
 .parallax_background
 {
-	opacity: 0.1;
+	/* opacity: 0.1; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -488,7 +489,7 @@ img
 	font-size: 10px;
 	font-weight: bold;
 	color: transparent;
-	opacity: 0.5;
+	opacity: 0.7;
 	z-index: 3;
 	visibility: hidden;
 	text-align: center;
@@ -701,6 +702,112 @@ img
 		-o-transform: translateY(23px);
 		transform: translateY(23px);
 	}
+}
+
+/* Book an Appointment */
+.footer-section 
+{
+	padding-top: 10%;
+}
+.footer-warp 
+{
+	max-width: 1613px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.footer-widgets 
+{
+	padding: 0 15px;
+}
+.footer-widget .fw-title 
+{
+	color: #fff;
+	font-size: 42px;
+	font-weight: 600;
+	margin-bottom: 10%;
+}
+.footer-widget.list-widget ul 
+{
+	font-size: 18px;
+	font-weight: 300;
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer-widget.list-widget ul:last-child 
+{
+	margin-right: 0;
+	margin-bottom: 50%;
+}
+.footer-widget.list-widget ul li a 
+{
+	color: #fff;
+	opacity: 1;
+	margin-bottom: 12px;
+	display: block;
+}
+.footer-widget.list-widget ul li a:hover 
+{
+	color: #000;
+}
+.footer-widget.contact-widget 
+{
+	float: right;
+}
+.fw-contact-form .cf-inputs 
+{
+	margin: 0 -9px;
+}
+.fw-contact-form .cf-input 
+{
+	outline: none;
+	color: #FFF;
+	width: 40%;
+	float: left;
+	padding: 0 9px;
+}
+.fw-contact-form .cf-input::placeholder 
+{ 
+	color: rgba(255,255,255,0.7);
+}
+.fw-contact-form .cf-input input 
+{
+	height: 50px;
+	width: 100%;
+	border: none;
+	background: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 22px;
+}
+.fw-contact-form .cf-input .service-reqd
+{
+	min-width: 560px;
+}
+.fw-contact-form .btn
+{
+	text-align: center;
+} 
+.fw-contact-form .site-btn 
+{
+	margin-top: 45%;
+	margin-left: -90%;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	padding: 12px 30px;
+	min-width: 145px;
+	border: 2px solid #1b5a1e;
+	background: #1b5a1e;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.site-btn:hover 
+{
+	color: #1b5a1e;
+	background: #fff;
 }
 
 /* Services */
