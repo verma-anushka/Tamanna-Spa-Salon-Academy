@@ -1,0 +1,24 @@
+{
+  "name": "tamannaspabeautyacademy",
+  "version": "1.0.0",
+  "description": "Tamanna-Spa-Beauty-Academy-Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verma-anushka/Salon-Website.git"
+  },
+  "author": "Anushka Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verma-anushka/Salon-Website/issues"
+  },
+  "homepage": "https://github.com/verma-anushka/Salon-Website#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
