@@ -1,12 +1,9 @@
-
-const express = require('express'),
+const express = require('express');
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
-// app.use(express.static(__dirname));
-
 
 app.get("/", function(req, res){
 	res.render('index.ejs');
@@ -22,6 +19,10 @@ app.get("/products", function(req, res){
 
 app.get("/aboutUs", function(req, res){
 	res.render('aboutUs.ejs');
+});
+
+app.get("/appointment", function(req, res){
+	res.render('appointment.ejs');
 });
 
 app.set('port', process.env.PORT || 3000);
